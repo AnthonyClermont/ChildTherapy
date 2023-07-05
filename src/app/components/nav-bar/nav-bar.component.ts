@@ -30,4 +30,12 @@ export class NavBarComponent {
       route: '/contact',
     }
   ]
+
+  public openNav() {
+    document.getElementById("mySidenav")!.style.width = "100%";
+  }
+
+  public closeNav() {
+    document.getElementById("mySidenav")!.style.width = "0";
+  }
 }

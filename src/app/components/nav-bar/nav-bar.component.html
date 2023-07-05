@@ -3,6 +3,9 @@
     <img src="assets/logo.png" alt="LOGO">
     <img class="name-img" src="assets/name.png" alt="LOGO">
   </div>
+  <div class="mobile-nav">
+    <button (click)="openNav()"><i class="fa fa-bars"></i></button>
+  </div>
   <div class="nav-right">
     <a href="https://www.facebook.com/samantha.clermont"><i class="fa fa-facebook"></i></a>
     <a href="https://www.facebook.com/samantha.clermont"><i class="fa fa-twitter"></i></a>
@@ -16,3 +19,12 @@
     </a>
   </div>
 </section>
+
+<div id="mySidenav" class="sidenav">
+  <div class="nav-menu-container">
+    <a class="closebtn" (click)="closeNav()">&times;</a>
+    <a (click)="closeNav()" *ngFor="let link of navLinks" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-nav" [routerLink]="link.route">
+      {{ link.name }}
+    </a>
+  </div>
+</div>
