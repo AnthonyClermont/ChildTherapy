@@ -11,9 +11,8 @@
 </section>
 <section class="nav">
   <div class="nab-links">
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a>About Me</a>
-    <a>what is Play Therapy?</a>
-    <a>Contact</a>
+    <a *ngFor="let link of navLinks" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" [routerLink]="link.route">
+      {{ link.name }}
+    </a>
   </div>
 </section>

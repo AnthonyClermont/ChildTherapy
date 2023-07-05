@@ -2,7 +2,6 @@
   width: 100%;
   height: fit-content;
   padding: .5em 4em .5em 2em;
-  background-color: whitesmoke;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -53,6 +52,7 @@ button {
   font-weight: 600;
   color: #b393cb;
   font-size: 1rem;
+  background-color: white;
   align-items: center;
   outline: 1px solid black;
   padding: .25em 1em;
@@ -75,7 +75,6 @@ button:hover {
   width: 100%;
   height: fit-content;
   padding: .75em 2em;
-  background-color: whitesmoke;
   position: relative;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
   display: flex;
