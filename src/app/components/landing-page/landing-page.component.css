@@ -1,0 +1,19 @@
+section {
+  width: 100%;
+  padding: 1em 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  color: #8ec89a;
+  -webkit-text-stroke: 1px black;
+  font-size: 3.25rem;
+  font-weight: 600;
+}
