@@ -50,6 +50,12 @@ img {
   gap: 2em;
 }
 
+.menu-button {
+  padding: .9em;
+  border: none;
+  border-radius: 999px;
+}
+
 button {
   display: flex;
   flex-direction: row;
@@ -63,6 +69,7 @@ button {
   border: 2px solid #b393cb;
   border-radius: 15px;
   cursor: pointer;
+  transition: all .5s;
 }
 
 button:hover .fa {
@@ -111,7 +118,10 @@ button:hover {
 .active-nav {
   text-decoration: none;
   font-weight: 600;
+  border-bottom: 5px solid #b393cb;
   color: #b393cb !important;
+  width: fit-content;
+
 }
 
 @media only screen and (max-width: 1050px) {
@@ -127,6 +137,7 @@ button:hover {
 @media only screen and (max-width: 750px) {
   .header {
     padding: .5em 2em .5em 1em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
   }
 
   .mobile-nav {
@@ -166,10 +177,12 @@ button:hover {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  margin: 0 .5em .5em 1.75em;
   text-decoration: none;
-  font-size: 25px;
-  color: black;
+  font-size: 2.25rem;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+  color: white;
   display: block;
   transition: 0.2s;
 }
@@ -184,13 +197,24 @@ button:hover {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 25px;
-  font-size: 36px;
+  font-size: 3rem;
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 450px) {
+  .sidenav a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .closebtn {
+    font-size: 2rem !important;
+  }
+
+  .sidenav a {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
 }

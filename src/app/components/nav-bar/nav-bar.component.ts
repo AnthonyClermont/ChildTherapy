@@ -22,8 +22,8 @@ export class NavBarComponent {
       route: '/about-me',
     },
     {
-      name: 'What is Play Therapy',
-      route: '/what-is',
+      name: 'What is Play Therapy?',
+      route: '/what-is-play-therapy',
     },
     {
       name: 'Contact',

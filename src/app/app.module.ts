@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {NgToastModule} from "ng-angular-popup";
+import { WhatIsComponent } from './components/what-is/what-is.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgToastModule} from "ng-angular-popup";
     LandingPageComponent,
     FooterComponent,
     AboutMeComponent,
-    ContactComponent
+    ContactComponent,
+    WhatIsComponent
   ],
   imports: [
     BrowserModule,
