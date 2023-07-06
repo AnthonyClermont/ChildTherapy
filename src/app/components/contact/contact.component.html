@@ -1,0 +1,60 @@
+<section>
+  <h1>Contact Me</h1>
+  <h3>To find out if I can help you or a child, please send me a brief message and I will reply as soon as possible.</h3>
+
+  <form [formGroup]="profileForm" (ngSubmit)="submitForm()">
+    <div class="name-container">
+      <span>
+        <label for="first-name">First Name *</label>
+        <input [class.invalid]="!profileForm.controls.firstName.valid && profileForm.controls.firstName.touched" [class.valid]="profileForm.controls.firstName.valid && profileForm.controls.firstName.touched" id="first-name" type="text" formControlName="firstName">
+      </span>
+
+      <span>
+        <label for="surname">Surname *</label>
+        <input [class.invalid]="!profileForm.controls.surname.valid && profileForm.controls.surname.touched" [class.valid]="profileForm.controls.surname.valid && profileForm.controls.surname.touched" id="surname" type="text" formControlName="surname">
+      </span>
+    </div>
+
+    <span>
+      <label for="email">Email *</label>
+      <input [class.invalid]="!profileForm.controls.email.valid && profileForm.controls.email.touched" [class.valid]="profileForm.controls.email.valid && profileForm.controls.email.touched" id="email" type="email" formControlName="email">
+    </span>
+
+    <span>
+      <label for="phone-num">Phone Number</label>
+      <input [class.invalid]="!profileForm.controls.phoneNum.valid && profileForm.controls.phoneNum.touched" [class.valid]="profileForm.controls.phoneNum.valid && profileForm.controls.phoneNum.touched" id="phone-num" type="tel" formControlName="phoneNum">
+    </span>
+
+    <span>
+      <label for="content">Message *</label>
+      <textarea [class.invalid]="!profileForm.controls.content.valid && profileForm.controls.content.touched" [class.valid]="profileForm.controls.content.valid && profileForm.controls.content.touched" id="content" type="text" formControlName="content" maxlength="500"></textarea>
+      <p class="small">{{ profileForm.value.content?.length }}/500</p>
+    </span>
+
+    <span class="checkbox-container">
+      <label [class.invalidText]="!checkboxValid() && profileForm.touched" class="extra-margin">Please choose which option fits you *</label>
+      <div>
+        <input type="checkbox" formControlName="typeParent"/>
+        {{ options[0].name }}
+      </div>
+      <div>
+        <input type="checkbox" formControlName="typeSchool"/>
+        {{ options[1].name }}
+      </div>
+      <div>
+        <input type="checkbox" formControlName="typeOrg"/>
+        {{ options[2].name }}
+      </div>
+      <div>
+        <input type="checkbox" formControlName="typeOther"/>
+        {{ options[3].name }}
+      </div>
+    </span>
+
+    <button [disabled]="!formValid || submitted" type="submit">
+      Send to Samantha
+      <i *ngIf="submitted" class="fa fa-spinner fa-spin"></i>
+      <i *ngIf="!submitted" class="fa fa-paper-plane"></i>
+    </button>
+  </form>
+</section>

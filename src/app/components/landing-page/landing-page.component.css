@@ -32,13 +32,25 @@ h2 {
 }
 
 a {
-  margin-top: 1.5em;
-  text-decoration: none;
-  outline: 1px solid black;
-  border: 4px solid #c4e9fb;
-  padding: .5em 2em;
-  border-radius: 15px;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  font-weight: 600;
   color: black;
+  font-size: 1rem;
+  background-color: white;
+  align-items: center;
+  padding: .25em 1em;
+  border: 2px solid #c4e9fb;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+a:hover {
+  background-color: #c4e9fb;
+  border-color: #829ba7;
 }
 
 .i-am h2 {
@@ -49,11 +61,16 @@ a {
   border-color: #b393cb;
 }
 
+.i-am a:hover {
+  background-color: #b393cb;
+  border-color: #695677;
+  color: white;
+}
+
 .profile-img {
   border-radius: 999px;
   max-width: 250px;
-  outline-offset: 5px;
-  outline: 5px solid #b393cb;
+  border: 4mm ridge #b393cb;
 }
 
 .container {
