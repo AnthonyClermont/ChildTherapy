@@ -7,9 +7,9 @@
     <button class="menu-button" (click)="openNav()"><i class="fa fa-bars"></i></button>
   </div>
   <div class="nav-right">
-    <a href="https://www.facebook.com/samantha.clermont"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.facebook.com/samantha.clermont"><i class="fa fa-twitter"></i></a>
-    <button routerLink="/contact">contact<i class="fa fa-envelope"></i></button>
+    <a href="https://www.facebook.com/samantha.clermont" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a>
+    <button routerLink="/contact">contact<i class="fa fa-paper-plane"></i></button>
   </div>
 </section>
 <section class="nav">
@@ -26,5 +26,11 @@
     <a (click)="closeNav()" *ngFor="let link of navLinks" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-nav" [routerLink]="link.route">
       {{ link.name }}
     </a>
+
+    <div class="social-links">
+      <a (click)="closeNav()" href="https://www.facebook.com/samantha.clermont" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a (click)="closeNav()" href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a>
+      <button (click)="closeNav()" routerLink="/contact">contact<i class="fa fa-paper-plane"></i></button>
+    </div>
   </div>
 </div>

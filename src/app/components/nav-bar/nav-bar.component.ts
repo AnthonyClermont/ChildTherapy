@@ -32,10 +32,12 @@ export class NavBarComponent {
   ]
 
   public openNav() {
+    document.body.style.position = 'fixed';
     document.getElementById("mySidenav")!.style.width = "100%";
   }
 
   public closeNav() {
+    document.body.style.position = '';
     document.getElementById("mySidenav")!.style.width = "0";
   }
 }

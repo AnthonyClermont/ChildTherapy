@@ -42,6 +42,10 @@ img {
   color: #b0d39b;
 }
 
+.fa-paper-plane {
+  font-size: 1.5rem;
+}
+
 .nav-right {
   display: flex;
   flex-direction: row;
@@ -121,7 +125,6 @@ button:hover {
   border-bottom: 5px solid #b393cb;
   color: #b393cb !important;
   width: fit-content;
-
 }
 
 @media only screen and (max-width: 1050px) {
@@ -136,7 +139,7 @@ button:hover {
 
 @media only screen and (max-width: 750px) {
   .header {
-    padding: .5em 2em .5em 1em;
+    padding: .5em 1em .5em 1em;
     border-bottom: 1px solid rgba(128, 128, 128, 0.13);
   }
 
@@ -160,7 +163,23 @@ button:hover {
 .nav-menu-container {
   display: flex;
   margin: 1em 3em;
+  height: 65vh;
   flex-direction: column;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: auto;
+}
+
+.social-links button {
+  height: fit-content;
+}
+
+.social-links a {
+  margin: 0 !important;
 }
 
 .sidenav {
