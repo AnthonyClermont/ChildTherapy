@@ -22,6 +22,7 @@ img {
 }
 
 .nav-left {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,12 +35,13 @@ img {
   -webkit-text-stroke: 1px black;
 }
 
-.fa-facebook {
-  color: #f6b283;
+.fa-linkedin-square {
+  color: #b0d39b;
 }
 
-.fa-twitter {
-  color: #b0d39b;
+.fa-envelope {
+  color: #f6b283;
+  cursor: pointer;
 }
 
 .fa-paper-plane {

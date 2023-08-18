@@ -1,5 +1,5 @@
 <section id="section" class="header">
-  <div class="nav-left">
+  <div class="nav-left" (click)="router.navigate(['/'])">
     <img src="assets/logo.png" alt="LOGO">
     <img class="name-img" src="assets/name.png" alt="LOGO">
   </div>
@@ -7,8 +7,8 @@
     <button class="menu-button" (click)="openNav()"><i class="fa fa-bars"></i></button>
   </div>
   <div class="nav-right">
-    <a href="https://www.facebook.com/samantha.clermont" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://uk.linkedin.com/in/samantha-clermont-47031b9b" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+    <a (click)="email()"><i class="fa fa-envelope"></i></a>
     <button routerLink="/contact">contact<i class="fa fa-paper-plane"></i></button>
   </div>
 </section>
@@ -28,8 +28,8 @@
     </a>
 
     <div class="social-links">
-      <a (click)="closeNav()" href="https://www.facebook.com/samantha.clermont" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a (click)="closeNav()" href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://uk.linkedin.com/in/samantha-clermont-47031b9b" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+      <a (click)="email()"><i class="fa fa-envelope"></i></a>
       <button (click)="closeNav()" routerLink="/contact">contact<i class="fa fa-paper-plane"></i></button>
     </div>
   </div>

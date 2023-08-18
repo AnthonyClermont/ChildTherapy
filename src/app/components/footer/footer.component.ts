@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent {}
+export class FooterComponent {
+  public email() {
+    window.location.href = "mailto:samantha.clermont@outlook.com?subject=Therapeutic Play Enquiry";
+  }
+}

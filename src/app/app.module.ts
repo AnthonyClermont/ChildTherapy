@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {NgToastModule} from "ng-angular-popup";
 import { WhatIsComponent } from './components/what-is/what-is.component';
+import {FadeInDirective} from "./directives/animation.directive";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WhatIsComponent } from './components/what-is/what-is.component';
     FooterComponent,
     AboutMeComponent,
     ContactComponent,
-    WhatIsComponent
+    WhatIsComponent,
+    FadeInDirective
   ],
   imports: [
     BrowserModule,

@@ -43,10 +43,12 @@ h2 {
 
 .content-left {
   text-align: left;
+  opacity: 0;
 }
 
 .content-right {
   text-align: right;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1200px) {

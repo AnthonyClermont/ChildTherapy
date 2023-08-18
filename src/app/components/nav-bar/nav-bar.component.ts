@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 interface route {
   name: string,
@@ -31,6 +32,9 @@ export class NavBarComponent {
     }
   ]
 
+  constructor(public router: Router) {
+  }
+
   public openNav() {
     document.body.style.position = 'fixed';
     document.getElementById("mySidenav")!.style.width = "100%";
@@ -39,5 +43,9 @@ export class NavBarComponent {
   public closeNav() {
     document.body.style.position = '';
     document.getElementById("mySidenav")!.style.width = "0";
+  }
+
+  public email() {
+    window.location.href = "mailto:samantha.clermont@outlook.com?subject=Therapeutic Play Enquiry";
   }
 }
